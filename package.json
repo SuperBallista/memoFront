@@ -1,29 +1,46 @@
 {
-  "name": "front",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview",
-    "check": "svelte-check --tsconfig ./tsconfig.app.json && tsc -p tsconfig.node.json"
+    "build": "robocopy ..\\front\\dist .\\dist /E",
+    "android": "npx cap open android",
+    "ios": "npx cap open ios"
   },
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "ESNext",
+    "moduleResolution": "Node",
+    "resolveJsonModule": true,
+    "esModuleInterop": true,
+    "experimentalDecorators": true,
+    "emitDecoratorMetadata": true,
+    "verbatimModuleSyntax": true,
+    "types": [
+      "svelte",
+      "node"
+    ],
+    "outDir": "dist",
+    "rootDir": "src",
+    "baseUrl": "../"
+  },
+  "include": [
+    "../../front/dist/*",
+    "./src/*",
+    "./../front/src/*",
+    "./dist"
+  ],
+  "exclude": [
+    "node_modules"
+  ],
   "devDependencies": {
     "@sveltejs/vite-plugin-svelte": "^5.0.3",
-    "@tsconfig/svelte": "^5.0.4",
     "@types/node": "^22.13.4",
-    "svelte": "^5.19.6",
-    "svelte-check": "^4.1.4",
-    "typescript": "~5.7.2",
-    "vite": "^6.1.0",
-    "vite-plugin-static-copy": "^2.2.0"
+    "svelte": "^5.20.1",
+    "typescript": "^5.7.3",
+    "vite": "^6.1.0"
   },
   "dependencies": {
-    "@tailwindcss/vite": "^4.0.6",
-    "path": "^0.12.7",
-    "path-browserify": "^1.0.1",
-    "pretendard": "^1.3.9",
-    "tailwindcss": "^4.0.6"
+    "@capacitor/android": "^7.0.1",
+    "@capacitor/cli": "^7.0.1",
+    "@capacitor/core": "^7.0.1",
+    "@capacitor/splash-screen": "^7.0.0"
   }
 }

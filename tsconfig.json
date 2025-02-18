@@ -1,24 +1,23 @@
 {
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ],
-  "compilerOptions": {
-    "target": "ES2015",
-    "allowSyntheticDefaultImports": true,
-    "allowImportingTsExtensions":true,
-    "noEmit": true,
-    "esModuleInterop": true,
-    "types": ["node"],  
-    "moduleResolution": "bundler",  
-    "module": "ES2015",
-    "baseUrl": ".",
-    "paths": {
-      "@lib/*": ["src/lib/*"],
-      "@components/*": ["src/components/*"]
-    }
-  },
-  "include": ["src/**/*"],  
-  "exclude": ["node_modules"]
-}
+    "compilerOptions": {
+      "target": "ES2022",
+      "module": "ESNext",
+      "moduleResolution": "Node",
+      "resolveJsonModule": true,
+      "esModuleInterop": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "verbatimModuleSyntax": true,
+      "types": ["svelte", "node"],
+      "outDir": "dist",
+      "rootDir": "../",
+      "baseUrl": ".",
+      "paths": {
+        "@shared/*": ["../shared/*"],
+        "@svelteSrc/*": ["../front/src/*"]
+      }
+    },
+    "include": ["src/**/*", "../front/*"],
+    "exclude": ["node_modules"]
+  }
+  
