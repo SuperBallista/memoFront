@@ -1,0 +1,77 @@
+@import "pretendard/dist/web/static/pretendard.css";
+@import "tailwindcss";
+
+body {
+  font-family: "Pretendard", sans-serif;
+  background-color: #E3F2FD;
+  color: #111827;
+}
+
+/* 메인 컬러 */
+.bg-main { background-color: #2563EB; }
+.text-main { color: #2563EB; }
+
+/* 서브 컬러 */
+.bg-sub1 { background-color: #3B82F6; }
+.text-sub1 { color: #3B82F6; }
+
+.bg-sub2 { background-color: #60A5FA; }
+.text-sub2 { color: #60A5FA; }
+
+/* 강조 컬러 */
+.bg-accent { background-color: #EF4444; }
+.text-accent { color: #EF4444; }
+
+/* 일반 버튼 컬러 */
+.bg-button { background-color: #4B5563; }
+.text-button { color: white; }
+
+/* 배경 및 카드 섹션 */
+.bg-light { background-color: #E3F2FD ; } /* 배경 */
+.bg-card { background-color: #D6E6FF; } /* 카드 섹션 */
+
+/* 글자 컬러 */
+.text-default { color: #111827; } /* 기본 */
+.text-muted { color: #6B7280; } /* 흐린 글자 */
+.text-highlight { color: #EF4444; } /* 강조 */
+
+/* 버튼 스타일 */
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+/* 버튼 색상 */
+.btn-main { background-color: #2563EB; color: white; }
+.btn-main:hover, btn-main:active { background-color: #1E4DB7; } /* 살짝 어두운 블루 */
+.btn-accent { background-color: #EF4444; color: white; }
+.btn-accent:hover, .btn-accent:active { background-color: #D32F2F; } /* 살짝 어두운 레드 */
+.btn-gray { background-color: #4B5563; color: white; }
+.btn-gray:hover, .btn-gray:active {  background-color: #374151; /* 밝게 */}
+
+
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-Regular.woff2') format('woff2'),
+       url('/fonts/pretendard/Pretendard-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Pretendard';
+  src: url('/fonts/pretendard/Pretendard-Bold.woff2') format('woff2'),
+       url('/fonts/pretendard/Pretendard-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Pretendard', sans-serif;
+}

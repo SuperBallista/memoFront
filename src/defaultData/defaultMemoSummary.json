@@ -1,0 +1,31 @@
+[
+  {
+    "kind": "after",
+    "list": [
+      { "id": 3, "title": "다음 주 시간표 조정", "summary": "수업 변경 사항 및 교사 일정 반영", "checkAt": "2시간 후" },
+      { "id": 4, "title": "학생 상담 일정", "summary": "개별 상담 대상 학생 확인 및 일정 조율", "checkAt": "4시간 후" },
+      { "id": 9, "title": "수업 계획", "summary": "수업 지도안 작성", "checkAt": "7시간 전"}
+    ]
+  },
+  {
+    "kind": "before",
+    "list": [
+      { "id": 1, "title": "지난 주 학급회의 요약", "summary": "주요 안건 및 학생 건의사항 정리", "checkAt": "3일 전" },
+      { "id": 2, "title": "진도 점검 회의", "summary": "지난 주 학습 진도 및 평가 결과 분석", "checkAt": "5일 전" }
+    ]
+  },
+  {
+    "kind": "recentViews",
+    "list": [
+      { "id": 5, "title": "학생 생활 기록부 정리", "summary": "생활 지도 및 학급 분위기 정리", "checkAt": "1일 전" },
+      { "id": 6, "title": "교내 행사 준비", "summary": "체육대회 운영 및 역할 분담 확인", "checkAt": "2일 전" }
+    ]
+  },
+  {
+    "kind": "카테고리",
+    "list": [
+      { "id": 7, "title": "수업 자료", "summary": "학습 지도안 및 수업 자료 정리", "checkAt": "6시간 전" },
+      { "id": 8, "title": "학급 운영 계획", "summary": "학생 생활 지도 및 학급 행사 계획", "checkAt": "30분 전" }
+    ]
+  }
+]

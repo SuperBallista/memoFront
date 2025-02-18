@@ -1,0 +1,47 @@
+[
+    { 
+      "id": 1, 
+      "name": "학급 관리", 
+      "children": [
+        { "id": 16, "name": "출석부", "children": [], "orderNum": 0, "parentId": 1 },
+        { "id": 5, "name": "학생 정보", "children": [], "orderNum": 1, "parentId": 1 },
+        { "id": 6, "name": "학급 회의록", "children": [], "orderNum": 2, "parentId": 1 }
+      ],
+      "parentId": null,
+      "orderNum": 0
+    },
+    { 
+      "id": 2, 
+      "name": "학생 지도", 
+      "children": [
+        { "id": 7, "name": "상담 기록", "children": [], "orderNum": 0, "parentId": 2 },
+        { "id": 8, "name": "생활 지도", "children": [], "orderNum": 1, "parentId": 2 },
+        { "id": 9, "name": "상벌점 관리", "children": [], "orderNum": 2, "parentId": 2 }
+      ],
+      "parentId": null,
+      "orderNum": 1
+    },
+    { 
+      "id": 3, 
+      "name": "행정 업무", 
+      "children": [
+        { "id": 10, "name": "공지사항", "children": [], "orderNum": 0, "parentId": 3 },
+        { "id": 11, "name": "행사 일정", "children": [], "orderNum": 1, "parentId": 3 },
+        { "id": 12, "name": "예산 관리", "children": [], "orderNum": 2, "parentId": 3 }
+      ],
+      "parentId": null,
+      "orderNum": 2
+    },
+    { 
+      "id": 4, 
+      "name": "교육 자료", 
+      "children": [
+        { "id": 13, "name": "수업 자료", "children": [], "orderNum": 0, "parentId": 4 },
+        { "id": 14, "name": "평가 계획", "children": [], "orderNum": 1, "parentId": 4 },
+        { "id": 15, "name": "교사 연수", "children": [], "orderNum": 2, "parentId": 4 }
+      ],
+      "parentId": null,
+      "orderNum": 3
+    }
+  ]
+  
